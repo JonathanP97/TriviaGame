@@ -1,9 +1,8 @@
 body{
-	background-color: yellow;
+	background-color: #61d3dd;
 }
 
-.q1{
-	background-color: green;
+#q{
 	padding: 4px;
 	width: 60%;
 	margin-left: auto;
@@ -11,11 +10,19 @@ body{
 }
 
 .container{
-	color: #d5efba;
-	background-color: #9cb6e2;
+	color: #61d3dd;
+	background-color: #255e63;
 	width: 75%;
 	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 18px;
+}
+
+#resultsBox{
+	display: none;
+	background-color: #776a15;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
 }

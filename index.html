@@ -10,31 +10,63 @@
 </head>
 <body>
 	<div class="container text-center">
-		<h2>Trivial Trivia</h2>
+
+		<h2>Trivia Game</h2>
 		<h5>Time Remaining: <a id="spanTime">40</a> seconds</h5>
 		<br>
 
 		<br>
-		<div class="q1">
-			<h3>Question 1</h3>
+		<div id="questionBox">
+			<div id="q">
+				<h3>What year was the typewriter invented?</h3><h6>
 
-			<h5><form action="">
-				<input type="radio" name="answer" value="answerA"> Answer A
-				<input type="radio" name="answer" value="answerB"> Answer B
-				<input type="radio" name="answer" value="answerC"> Answer C
-			</form></h5>
+					<input type="radio" name="answer1" value="answerA" > 1842
+					<input type="radio" name="answer1" value="answerB"> 1868
+					<input type="radio" name="answer1" value="answerC"> 1902
+				</h6></div>
+
+			<br>
+			<div id="q">
+				<h3>Which of these parks first opened?</h3><h6>
+
+					<input type="radio" name="answer2" value="answerA"> Lego Land
+					<input type="radio" name="answer2" value="answerB"> Disney Land
+					<input type="radio" name="answer2" value="answerC"> Knott's Berry Farm
+				</h6></div>
+
+			<br>
+			<div id="q">
+				<h3>What year was the lighter invented?</h3><h6>
+
+					<input type="radio" name="answer3" value="answerA"> 1823
+					<input type="radio" name="answer3" value="answerB"> 1796
+					<input type="radio" name="answer3" value="answerC"> 1703
+				</h6></div>
+
+			<br>
+			<div id="q">
+				<h3>What year did the US become independent?</h3><h6>
+
+					<input type="radio" name="answer4" value="answerA"> 1776
+					<input type="radio" name="answer4" value="answerB"> 1777
+					<input type="radio" name="answer4" value="answerC"> 1764
+				</h6></div>
+			<br>
+			<div id="q">
+				<h3>Where was the first Denny's located?</h3><h6>
+					<input type="radio" name="answer5" value="answerA"> Denver, Colorado
+					<input type="radio" name="answer5" value="answerB"> Lakewood, California
+					<input type="radio" name="answer5" value="answerC"> Springfield, Missouri
+				</h6></div>
 		</div>
-
 		<br>
-		<div class="q1">
-			<h3>Question 2</h3>
+		<button onclick="checkAnswers()">Done</button> 
 
-			<h5><form action="">
-				<input type="radio" name="answer" value="answerA"> Answer A
-				<input type="radio" name="answer" value="answerB"> Answer B
-				<input type="radio" name="answer" value="answerC"> Answer C
-			</form></h5>
-		</div>
+		<div id="resultsBox"> <h4>
+			<p class="spanCorrect">error</p>
+			<p class="spanWrong">error</p>
+			Thanks for playing!
+		</h4></div>
 
 	</div>	
 
